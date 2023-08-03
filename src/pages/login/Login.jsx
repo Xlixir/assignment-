@@ -15,11 +15,11 @@ export const Login = () => {
       <section className='login'>
         <div className='container'>
           <div className='backImg'>
-            <img src={back} alt='' />
-            <div className='text'>
+            <img src={back} alt='' className="" />
+            {/* <div className='text'>
               <h3>Login</h3>
               <h1>My ACcount</h1>
-            </div>
+            </div> */}
           </div>
 
           <form onSubmit={handleSubmit}>

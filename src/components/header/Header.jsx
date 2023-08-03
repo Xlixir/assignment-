@@ -1,5 +1,5 @@
 import React from "react"
-import Medicine from "../../assets/images/Medicine.svg"
+import icon from "../../assets/images/icon.svg"
 import "./header.css"
 import { AiOutlineSearch } from "react-icons/ai"
 import { Card } from "./Card"
@@ -19,16 +19,17 @@ export const Header = () => {
         <div className='scontainer flex'>
           <div className='logo'>
             <Link to='/'>
-              <img src={Medicine} alt='Medicine' />
+              {/* <img src={Medicine} alt='Medicine' /> */}
             </Link>
           </div>
-          <div className='search flex'>
-            <AiOutlineSearch className='searchIcon' />
-            <input type='text' placeholder='Search...' />
+          <div className='flex'>
+          <Link to='/'>
+              <img src={icon} alt='Medicine' />
+            </Link>
           </div>
           <div className='account flexCenter'>
             <Card />
-            <User />
+            {/* <User /> */}
           </div>
         </div>
       </header>

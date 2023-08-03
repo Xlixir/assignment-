@@ -38,8 +38,8 @@ export const User = () => {
                     </div>
                   </Link>
                   <div className='text'>
-                    <h4>Eden Smith</h4>
-                    <label htmlFor=''>Los Angeles,CA</label>
+                    <h4>Niraj Gupta</h4>
+                    <label htmlFor=''>Bangalore, India</label>
                   </div>
                 </div>
                 <Link to='/login'>

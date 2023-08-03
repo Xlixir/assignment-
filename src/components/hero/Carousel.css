@@ -1,0 +1,81 @@
+/* ImageSlider.css */
+.slider-container {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    border-color: black;
+    margin-top: 15px;
+    border: round 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+  
+    .slide {
+      position: relative;
+  
+      /* Update the height of the image to 100% */
+      img {
+        width: 300%;
+        height: 100%; /* Fit the image to the entire container */
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+  
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.5); /* Customize the overlay background color */
+        color: #fff; /* Customize the overlay text color */
+        font-size: 24px; /* Customize the overlay text font size */
+        font-weight: bold; /* Customize the overlay text font weight */
+        opacity: 0; /* Initially hide the overlay */
+        transition: opacity 0.3s ease;
+      }
+  
+      /* Show the overlay on hover */
+      &:hover .overlay {
+        opacity: 1;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .slider-container {
+      height: 300px; /* Adjust height for smaller screens */
+    }
+    .slide img {
+      width: 100%; /* Adjust image width for smaller screens */
+      height: 100%; /* Adjust image height for smaller screens */
+    }
+    .slide .overlay {
+      font-size: 18px; /* Adjust overlay text font size for smaller screens */
+    }
+  }
+  
+  /* Media Queries for Tablets */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .slider-container {
+      height: 400px; /* Adjust height for tablet screens */
+    }
+    /* You can add more specific styles for tablets if needed */
+  }
+  
+  /* Media Queries for Desktop */
+  @media only screen and (min-width: 1024px) {
+    .slider-container {
+      height: 500px; /* Adjust height for desktop screens */
+    }
+    /* You can add more specific styles for desktop if needed */
+  }
+  
+  
+  
+    

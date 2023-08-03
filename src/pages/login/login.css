@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
 .login {
   position: relative;
   margin-bottom: 50px;
@@ -10,7 +16,7 @@
 .login .backImg img {
   width: 100%;
   height: 50vh;
-  object-fit: cover;
+  object-fit: fill;
 }
 .login .text {
   position: absolute;

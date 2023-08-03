@@ -4,6 +4,7 @@ import { AiOutlineClose } from "react-icons/ai"
 import { product } from "../../assets/data/data"
 import { CartItems } from "./CartItems"
 import { useSelector } from "react-redux"
+import { BiCart } from "react-icons/bi"
 
 export const Card = () => {
   const [cardOpen, setCardOpen] = useState(false)
@@ -24,7 +25,7 @@ export const Card = () => {
   return (
     <>
       <div className='card' onClick={() => setCardOpen(!cardOpen)}>
-        <BiShoppingBag className='cardIcon' />
+        <BiCart className='cardIcon' />
         <span className='flexCenter'>{quantity}</span>
       </div>
       <div className={cardOpen ? "overlay" : "nonoverlay"}></div>
@@ -42,8 +43,8 @@ export const Card = () => {
 
         <div className='checkOut'>
           <button>
-            <span>Priceed To Checkout</span>
-            <label htmlFor=''>${total}</label>
+            <span>Proceed To Checkout</span>
+            <label htmlFor=''>₹{total}</label>
           </button>
         </div>
       </div>

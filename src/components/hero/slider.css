@@ -1,4 +1,4 @@
-.slider {
+/* .slider {
   margin-top: 50px;
 }
 .slider img {
@@ -6,7 +6,7 @@
 }
 
 /*  order */
-.order {
+/* .order {
   margin-top: 50px;
 }
 .order .container {
@@ -38,4 +38,108 @@
 }
 .order .box:nth-child(4) h1 {
   background: #d8dafe;
+} */  
+
+/* slider.css */
+/* slider.css */
+
+
+/* slider.css */
+
+.slider {
+  margin-top: 50px;
 }
+
+.slider .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 20px; /* Added spacing at the bottom */
+}
+
+/* Card Background Styling */
+.slider .card {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background-color 0.5s ease smooth;
+  cursor: pointer;
+  width: 100%; /* Adjusted width for responsiveness */
+  max-width: 300px; /* Maximum width for each card */
+  height: 250px;
+  object-fit: contain; /* Adjusted height for each card */
+}
+
+/* Card 1 Styling */
+.slider .card:nth-child(1) {
+  background-color: #CDCCF3;
+}
+
+/* Card 2 Styling */
+.slider .card:nth-child(2) {
+  background-color: #F5FCC6;
+}
+
+/* Card 3 Styling */
+.slider .card:nth-child(3) {
+  background-color: #C5EEFD;
+}
+
+/* Card 4 Styling */
+.slider .card:nth-child(4) {
+  background-color: #FDEEE0;
+}
+
+.slider img {
+  width: 100%;
+  height: 160px; /* Adjusted height for the image */
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.slider .card-text {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Hover Effect */
+.slider .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 992px) {
+  .slider .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .slider .container {
+    grid-template-columns: 1fr;
+  }
+
+  .slider .card {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .slider img {
+    height: 120px;
+  }
+}
+
+
+
